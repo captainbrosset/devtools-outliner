@@ -1,0 +1,21 @@
+{
+  "name": "devtools-outliner",
+  "version": "1.0.0",
+  "license": "MPL-2.0",
+  "description": "DevTools extension that outlines elements in the page.",
+  "scripts": {
+    "build": "web-ext build --source-dir src --overwrite-dest --artifacts-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/captainbrosset/devtools-outliner.git"
+  },
+  "author": "Patrick Brosset",
+  "bugs": {
+    "url": "https://github.com/captainbrosset/devtools-outliner/issues"
+  },
+  "homepage": "https://github.com/captainbrosset/devtools-outliner#readme",
+  "devDependencies": {
+    "web-ext": "^2.2.2"
+  }
+}

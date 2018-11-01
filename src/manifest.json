@@ -1,0 +1,25 @@
+{
+  "description": "DevTools Inspector sidebar panel to outline elements",
+  "manifest_version": 2,
+  "name": "devtools-outliner",
+  "version": "1.0.0",
+  "author": "Patrick Brosset",
+  "homepage_url": "https://github.com/captainbrosset/devtools-outliner",
+  "icons": {
+    "48": "icons/logo.svg"
+  },
+
+  "permissions": [
+      "<all_urls>"
+  ],
+
+  "devtools_page": "devtools/devtools-page.html",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content_scripts/content.css"]
+    }
+  ]
+
+}

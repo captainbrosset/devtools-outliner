@@ -1,0 +1,14 @@
+# npm
+node_modules
+
+# web-ext output directory
+dist
+
+# vscode
+.vscode
+
+# macOS stuff
+.DS_Store
+
+# webstorm
+.idea/
