@@ -2,6 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -12,5 +16,50 @@ html, body {
 
 body {
   display: grid;
-  place-items: center;
+  place-items: center stretch;
+  grid-template-columns: 1fr 1fr;
+  gap: .5em;
+  padding: .5em;
+  background-color: rgb(249, 249, 250);
+  background-image: linear-gradient(to right,
+    transparent calc(50% - .5px),
+    rgba(0,0,0,.1) calc(50% - .5px),
+    rgba(0,0,0,.1) calc(50% + .5px),
+    transparent 0);
+  background-size: 100% 3em;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+body > button {
+  border: 0;
+  background: transparent;
+  padding: .5em 0;
+}
+
+body > button:hover {
+  background: #ededf0;
+}
+
+#outline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5em;
+}
+
+#outline .node-preview {
+  max-width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+#outline .node-preview .tag {
+  color: rgb(0, 116, 232);
+}
+
+#outline .node-preview .attribute {
+  color: rgb(221, 0, 169);
 }
